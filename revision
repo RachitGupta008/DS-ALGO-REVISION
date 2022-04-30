@@ -1,0 +1,32 @@
+Generic trees
+
+https://nados.io/question/diameter-of-generic-tree -- revise it -- recursion and updation at same time.
+https://www.pepcoding.com/resources/online-java-foundation/generic-tree/pred-succ-generic-tree-official/ojquestion
+https://www.pepcoding.com/resources/online-java-foundation/generic-tree/kth-largest-element-generic-tree-official/ojquestion
+
+
+Binary Tree:
+
+https://nados.io/question/print-nodes-k-distance-away
+
+
+https://nados.io/question/diameter-of-a-binary-tree
+https://nados.io/question/is-a-binary-search-tree
+
+
+BST:
+
+https://www.pepcoding.com/resources/online-java-foundation/binary-search-tree/remove-node-in-bst-official/ojquestion
+https://www.pepcoding.com/resources/online-java-foundation/binary-search-tree/tsp-bst-official/ojquestion -- TRY TO DO IN o(n) time and o(h) space.
+
+
+Hashmap
+
+https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/longest_consecutive_sequence/topic == O(N)
+
+PriorityQueue:
+
+https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/sort-ksorted-official/ojquestion
+https://nados.io/question/median-priority-queue
+https://nados.io/question/merge-k-sorted-lists
+https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/priority_queue_using_heap/topic
