@@ -1,3 +1,5 @@
+#Easy problem the trick is to use the count variable to effectively store the count of the positions not filled.
+
 import java.io.*;
 import java.util.*;
 
