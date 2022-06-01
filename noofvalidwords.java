@@ -1,5 +1,5 @@
 
-
+// Furthar optimization, for a puzzle check only the words with first char available for that we can create a Hashmap of Character and List to store the corresponding mapping.
 import java.io.*;
 import java.util.*;
 
