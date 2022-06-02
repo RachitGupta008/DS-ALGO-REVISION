@@ -18,8 +18,33 @@ public class Main {
 
         return res;
     }
+    
+    //Easy way, my way was a bit lengthy and can be reduced to this one
 
     public static long solution(long n, int k, int i) {
+
+        if(i==0){
+            return 0;
+
+
+        }
+
+        long mask = 1L<<i;
+
+        if((n&mask)==0){
+            return solution(n, k, i-1);
+
+
+        }else{
+            long sol = solution(n, k-1, i-1);
+            long rem = ncr(i, k);
+            return rem + sol;
+
+        }
+
+    }
+
+    public static long solution1(long n, int k, int i) {
 
 
         long lsbm = 1;
