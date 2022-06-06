@@ -77,6 +77,8 @@ Largest Square Sub-Matrix With All 1'S.j
 
 2key keyboard
 
+Variation LIS :
 longest increasing subsequence
 longest bitonic subsequence
 maximum overlapping bridges
+Russian doll envelopes [lc hard] do in O N LOG N
