@@ -116,3 +116,6 @@ Longest repeating subsequence
 
 
 Revise DP 29 -39 (try to write the pattern)
+
+
+isScramble -- try to solve on own and remember the pattern,recursion leap of faith is applicable.
