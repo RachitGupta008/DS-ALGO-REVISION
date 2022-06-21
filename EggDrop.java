@@ -4,6 +4,7 @@ import java.util.*;
 public class Main {
 	//solution using recursion and memoization
 	//Can also be done using tabulation
+	//It can be optimized furthar by going thru binary search, always check the middle floor.
 
 	public static int eggDrop(int n, int k, Map<String, Integer> map){
 		//write your code here
