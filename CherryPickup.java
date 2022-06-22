@@ -11,6 +11,7 @@ public class Main {
         return 0;
     }
     public static int ans1 = Integer.MIN_VALUE;
+    //This is the solution using  backtracking
     public static int Solution(int r1, int c1, int[][] arr, boolean visited){
         if((visited && r1 ==0 && c1 == 0) || (r1==arr.length || c1 == arr[0].length || r1<0 || c1<0
                 || arr[r1][c1] == -1
