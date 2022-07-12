@@ -151,3 +151,8 @@ Max Repeated numbers in two arrays (Longest common substring)
 
 
 https://leetcode.com/problems/distinct-echo-substrings/discuss/492704/Intuitive100-Sliding-Counter-(with-pictures) -- VVIP, help understand the concept of window and hashing.
+
+
+Coloring Border -- (Connected component variation) , two approaches, one with count and backtracking to check if the point is at border or not.
+
+
