@@ -157,3 +157,21 @@ Coloring Border -- (Connected component variation) , two approaches, one with co
 01Matrix -- Use BFS
 
 
+Rotten oranges
+As far as land as possible -- variation of 0/1 matrix
+Bus Stops
+https://leetcode.com/problems/sliding-puzzle/submissions/ -- LEET CODE , BFS variation
+learn to store state in string/ hashh
+
+Min no of swaps to create sorted array -- find cycles in graph
+
+Try to spend more time with question 
+
+
+Topics to revise graph with complexity:
+BFS
+DFS
+DJIKSTRA
+0-1 BFS
+How to design a priority quue.
+
