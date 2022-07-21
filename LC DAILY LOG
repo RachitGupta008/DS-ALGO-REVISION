@@ -3,4 +3,23 @@ Always try to think of the intuitive solution first then try to solve for comple
 
 https://leetcode.com/problems/reverse-linked-list-ii/solution/ -- good question, can be done with two pointer/ recursion / creating new list. follow up 
 reverse a link list using recursion.
+//reference
+static Node reverse(Node head) 
+    { 
+        if (head == null || head.next == null) 
+            return head; 
+  
+        /* reverse the rest list and put 
+        the first element at the end */
+        Node rest = reverse(head.next); 
+        head.next.next = head; 
+  
+        /* tricky step -- see the diagram */
+        head.next = null; 
+  
+        /* fix the head pointer */
+        return rest; 
+    } 
+
+
 
