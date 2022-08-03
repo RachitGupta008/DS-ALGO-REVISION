@@ -25,3 +25,10 @@ static Node reverse(Node head)
 
 
 Search a 2D Matrix II -- tricky one not able to come up with logic easily. TODO
+
+
+
+https://leetcode.com/problems/my-calendar-i/discuss/2355923/Easy-Solution-or-Java-or-TreeMap-balanced-tree-or-time-O(n*logn)-or-space-O(n)
+
+-- need to do a tree map since I havent used this ds yet
+
