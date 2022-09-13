@@ -5,5 +5,5 @@ https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/dis
 
 DP:
 https://leetcode.com/submissions/detail/795999447/ -- Stock Buy Sell 2
-
+cherry pickup -- good qustion
 https://leetcode.com/problems/partition-equal-subset-sum/submissions/
