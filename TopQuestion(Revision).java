@@ -7,3 +7,7 @@ DP:
 https://leetcode.com/submissions/detail/795999447/ -- Stock Buy Sell 2
 cherry pickup -- good qustion
 https://leetcode.com/problems/partition-equal-subset-sum/submissions/
+https://leetcode.com/problems/palindrome-partitioning-ii/submissions/ --coded with memoization + recursion and tabulation -- Palindrome partitioning try to do in o(n^2)
+
+https://leetcode.com/submissions/detail/801143324/ -- good question on dp for space optimization
+
