@@ -11,3 +11,8 @@ https://leetcode.com/problems/palindrome-partitioning-ii/submissions/ --coded wi
 
 https://leetcode.com/submissions/detail/801143324/ -- good question on dp for space optimization
 
+
+Trie (Data Structure):
+
+https://leetcode.com/problems/palindrome-pairs/
+
