@@ -15,4 +15,5 @@ https://leetcode.com/submissions/detail/801143324/ -- good question on dp for sp
 Trie (Data Structure):
 
 https://leetcode.com/problems/palindrome-pairs/
+https://leetcode.com/problems/sum-of-prefix-scores-of-strings/
 
