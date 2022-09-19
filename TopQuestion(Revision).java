@@ -10,6 +10,8 @@ https://leetcode.com/problems/partition-equal-subset-sum/submissions/
 https://leetcode.com/problems/palindrome-partitioning-ii/submissions/ --coded with memoization + recursion and tabulation -- Palindrome partitioning try to do in o(n^2)
 
 https://leetcode.com/submissions/detail/801143324/ -- good question on dp for space optimization
+Maximum profit in Job scheduling -- greedy
+
 
 
 Trie (Data Structure):
