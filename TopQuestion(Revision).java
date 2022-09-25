@@ -19,3 +19,16 @@ Trie (Data Structure):
 https://leetcode.com/problems/palindrome-pairs/
 https://leetcode.com/problems/sum-of-prefix-scores-of-strings/
 
+
+Design related probs:
+https://leetcode.com/problems/design-circular-queue/discuss/1141876/JS-Python-Java-C++-or-Simple-Array-Solution-w-Explanation/1617248
+
+1. LRU Cache
+2. Implement Queue using Stacks
+3. Design Circular Deque
+4. Design Circular Queue
+5. Time Based Key-Value Store
+6. Design Movie Rental System
+7. Operations on Tree
+8. Stock Price Fluctuation
+9. Design a Text Editor
