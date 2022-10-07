@@ -23,6 +23,7 @@ https://leetcode.com/problems/sum-of-prefix-scores-of-strings/
 
 Design related probs:
 https://leetcode.com/problems/design-circular-queue/discuss/1141876/JS-Python-Java-C++-or-Simple-Array-Solution-w-Explanation/1617248
+https://leetcode.com/problems/time-based-key-value-store/solution/
 
 1. LRU Cache
 2. Implement Queue using Stacks
