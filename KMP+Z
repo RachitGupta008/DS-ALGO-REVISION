@@ -1,0 +1,112 @@
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int idx = kmp(haystack, needle);
+
+        return idx==-1?idx:idx-needle.length()+1;
+       
+    }
+
+    public int kmp(String a, String b){
+        int i=0;
+        int j=0;
+        int[] l = new int[b.length()];
+        lps(l, b);
+        while(i<a.length()){
+            
+             if(a.charAt(i)==b.charAt(j)){
+                 i++;
+                 j++;
+             }else{
+                 if(j!=0){
+                     j = l[j-1];
+                 }else{
+                     j=0;
+                     i++;
+                 }
+
+
+             }
+
+            if(j==b.length()){
+                return i-1;
+            }
+
+        }
+
+        return -1;
+
+
+    }
+
+    public void lps(int[] l, String s){
+
+        int i=0;
+        int j=1;
+
+        while(j<s.length()){
+
+            if(s.charAt(i)==s.charAt(j)){
+
+                l[j] = i+1;
+                i++;
+                j++;
+            }else{
+
+                if(i!=0){
+                    i = l[i-1];
+                }else{
+                    l[j] = 0;
+                    j++;
+                }
+            }
+
+        }
+
+
+    }
+
+    public void zfun(int[] z, String s){
+        int len = s.length();
+        int l=0;
+        int r=0;
+        z[0] = 0;
+        for(int i=1;i<len;i++){
+
+            if(i>r){
+                l=r=i;
+
+                while(r<len && s.charAt(r)==s.charAt(r-l)){
+                    r++;
+                }
+
+                z[i] = r-l;
+                r--;
+
+            }else{
+
+                int k = i-l;
+
+                if((z[k]+i)<=r){
+                    z[i] = z[k];
+                }else{
+                    l=i;
+                    while(r<len && s.charAt(r)==s.charAt(r-l)){
+                        r++;
+                    }
+                    z[i] = r-l;
+                    r--;
+
+
+                }
+
+
+
+
+            }
+
+
+
+        }
+
+    }
+}
