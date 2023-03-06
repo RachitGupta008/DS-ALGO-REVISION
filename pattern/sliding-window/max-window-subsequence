@@ -1,0 +1,64 @@
+import java.util.*;
+public class Main{
+    public static String minWindow(String s, String t) {
+        // Write your code here
+        int s1 = 0;
+        int s2 = 0;
+        int e1 = 0;
+        int e2 = 0;
+        int len = Integer.MAX_VALUE;
+        int n1 = s.length();
+        int n2 = t.length();
+        String ans = "";
+        
+        /*
+        Logic: First try to expand the window till we surpass the length of t, that would confirm that this window contain a vailid subsequence
+        Then try to shrink the window to get the minimum length subsequence
+        ex S = abbcad T = bcd
+        
+        At window = [1-5] i.e bbcad is a valid window but its not of min length
+        so we squeeze it further to get the ans bcad
+        */
+        
+        s1 = pointer to s
+        e1 = pointer to t
+        
+        s2 = shrinking pointer for s
+        e2 = shrinking pointer for t
+        */
+        
+        while(s1<n1){
+            if(s.charAt(s1) == t.charAt(e1)){
+                e1++;
+            }
+
+            if(e1==n2){
+                s2 = s1;
+                e2 = e1-1;
+
+                while(e2!=-1){
+                    if(s.charAt(s2)==t.charAt(e2)){
+                        e2--;
+                    }
+                    s2--;
+
+                }
+
+                if(Math.abs(s2-s1)<len){
+                    ans = s.substring(s2+1, s1+1);
+                    len = s2-s1;
+                }
+                e1=0;
+
+            }
+
+            s1++;
+
+        }
+
+
+
+    
+        return ans;
+    }
+}
