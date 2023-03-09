@@ -1,4 +1,6 @@
 #This alsow works similarly first extend the window till we reach a valid state then reduce the window size based to get the min value.
+    
+# Acquire work release is the strategy, order changes but strategy remain the same.
 
 class Solution {
     public String minWindow(String s, String t) {
