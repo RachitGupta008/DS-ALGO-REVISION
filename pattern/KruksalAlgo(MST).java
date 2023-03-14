@@ -16,6 +16,7 @@ class DisjointSet {
             return node;
         }
         int ulp = findUPar(parent.get(node));
+        // Path compression in a DSU
         parent.set(node, ulp);
         return parent.get(node);
     }
@@ -59,6 +60,10 @@ class Edge implements Comparable<Edge> {
         return this.weight - compareEdge.weight;
     }
 };
+
+// Step 1: Sort all edges based upon weight, since algo is greedy will use the min weight
+// step 2: Apply DSU, if two nodes have same parent don't unionize else make a union
+// Ultimately the full union will have all the nodes connected.
 class Solution {
     //Function to find sum of weights of edges of the Minimum Spanning Tree.
     static int spanningTree(int V,
@@ -76,6 +81,7 @@ class Solution {
         }
         DisjointSet ds = new DisjointSet(V);
         // M log M
+        
         Collections.sort(edges);
         int mstWt = 0;
         // M x 4 x alpha x 2
