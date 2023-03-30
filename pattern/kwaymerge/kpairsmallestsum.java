@@ -1,3 +1,5 @@
+// Here we also add the potential candidates to the queue fastly in each iteration, so that we can get correct result
+
 class Pair {
     int sum;
     int i;
