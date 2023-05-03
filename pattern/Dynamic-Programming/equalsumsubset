@@ -1,0 +1,43 @@
+class Solution {
+    public boolean canPartition(int[] nums) {
+       
+        int sum = 0;
+        for(int i=0;i<nums.length;i++){
+            sum = sum + nums[i];
+        }
+        
+        if(sum%2!=0){
+            return false;
+        }
+        sum = sum/2;
+       // Integer[][] tb = new Integer[sum+1][sum+1];
+        Map<String, Boolean> mp = new HashMap<>();
+        
+        return dp(nums, 0, 0, sum, mp);
+        
+        
+    }
+    
+    boolean dp(int [] nums, int i, int p, int np,Map<String, Boolean> map ){
+        String key = i + "@"+ np;
+        
+        if(np == 0){
+            return true;
+        }else if(i==nums.length || np<0){
+            map.put(key, false);
+            return false;
+        }
+        
+        
+        
+        if(map.containsKey(key)){
+            return map.get(key);
+        }
+        boolean res = dp(nums, i+1, p+nums[i], np-nums[i], map) || dp(nums, i+1, p, np, map);
+        map.put(key, res);
+        return res;
+    }
+    
+    
+    
+}
