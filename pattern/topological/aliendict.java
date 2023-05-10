@@ -4,6 +4,11 @@ public class Solution {
   // use prev and curr word to build a map
   // Apply topological sort
   
+  Build a graph from the given words and keep track of the in-degrees of alphabets in a dictionary.
+Add the sources to a result list.
+Remove the sources and update the in-degrees of their children. If the in-degree of a child becomes  it’s the next source.
+Repeat until all alphabets are covered.
+  
   
   
   public String alienOrder(String[] words) {
