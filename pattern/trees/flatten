@@ -1,0 +1,51 @@
+Iterative
+public static BinaryTreeNode flattenTree(BinaryTreeNode root) {
+		if (root == null) {
+			return null;
+		}
+		BinaryTreeNode current = root;
+		while (current != null) {
+			
+			if (current.left != null) {
+				
+				BinaryTreeNode last = current.left;
+				while (last.right != null) {
+					last = last.right;
+				}
+
+				last.right = current.right;
+				current.right = current.left;
+				current.left = null;
+
+			}
+			current = current.right;
+		}
+		return root;
+	}
+  
+  // Recursive
+      TreeNode flat(TreeNode root){
+        if(root == null){
+            return null;
+        }
+        if(root.left == null && root.right==null){
+            return root;
+        }
+        
+        
+        
+        TreeNode l = flat(root.left);
+        TreeNode r = flat(root.right);
+        
+        if(l!=null){
+            l.right = root.right;
+            root.right = root.left;
+            root.left = null; 
+        }
+       
+        if(r==null){
+            return l;
+        }
+        return r;
+        
+    }
