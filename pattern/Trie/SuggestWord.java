@@ -1,3 +1,5 @@
+// We can also cache suggested words in a queue so that we don't need to backtrack or recurse since each node will contain a queue of suggested words.
+
 class Solution {
 
     class Node {
