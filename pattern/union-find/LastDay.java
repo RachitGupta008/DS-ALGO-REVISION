@@ -1,3 +1,4 @@
+https://leetcode.com/problems/last-day-where-you-can-still-cross/editorial/ -- good solution with binary search
 class Solution {
     public int latestDayToCross(int row, int col, int[][] cells) {
         
