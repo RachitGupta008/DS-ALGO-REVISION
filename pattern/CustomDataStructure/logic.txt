@@ -1,0 +1,11 @@
+LFU Cache (Least Frequently Used Cache): In an LFU Cache, the idea is to evict the least frequently used items first when the cache is full. This is typically implemented using a frequency map and a priority queue or multiple doubly linked lists.
+
+LRU Cache (Least Recently Used Cache): In an LRU Cache, the idea is to evict the least recently used items first when the cache is full. This is typically implemented using a combination of a doubly linked list (for O(1) addition/removal of nodes) and a hash map (for O(1) access to nodes).
+
+MinStack: A MinStack is a stack that supports all the operations of a regular stack (push, pop, top), and an additional operation, getMin, which returns the minimum element in the stack. This is typically implemented using two stacks: one to store all elements and another to keep track of the current minimum element.
+
+RandomizedSet: A RandomizedSet supports insert, remove, and getRandom operations in average O(1) time. This can be achieved by using a combination of a dynamic array (to support getRandom) and a hash map (to support insert and remove).
+
+TimeBasedMap: TimeBasedMap supports setting key-value pairs at certain timestamps and retrieving values at specific timestamps. This is usually implemented using a hash map to store keys and a sorted data structure (like a tree or sorted list) to store time-value pairs for each key.
+
+SnapshotArray: SnapshotArray supports "snapshot" operations that save the current state of the array, and "get" operations that retrieve values at previous snapshots. This is typically implemented using a combination of an array (or map) and a data structure that stores snapshots of the array at different points in time.
