@@ -1,0 +1,1 @@
+int bitCount = (int) Math.floor((int)(Math.log(n) / Math.log(2))) + 1; -- this tells which bit is last buit, how many bits required to store a num
