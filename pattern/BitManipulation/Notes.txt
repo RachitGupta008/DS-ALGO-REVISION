@@ -1,1 +1,16 @@
 int bitCount = (int) Math.floor((int)(Math.log(n) / Math.log(2))) + 1; -- this tells which bit is last buit, how many bits required to store a num
+
+
+nt bitmask = bitwise & (-bitwise); is often used to isolate the rightmost 1-bit in bitwise.
+
+Let's break it down:
+
+The expression -bitwise calculates the two's complement of the bitwise variable. The two's complement of a binary number is obtained by inverting all the bits (turning 1s into 0s and vice versa) and then adding 1.
+
+The & operator performs a bitwise AND operation. For each bit in the binary representation, the result is 1 if both corresponding bits are 1, otherwise it's 0.
+
+For example, let's say bitwise = 12 (which is 1100 in binary). The negative of bitwise is -12, which is represented in two's complement form as 0100 (invert 1100 to get 0011, add 1 to get 0100). The bitwise AND operation between 1100 and 0100 results in 0100 (which is 4 in decimal). So, in this case, bitmask would be 4.
+
+What's interesting here is that this operation always leaves the rightmost 1-bit and turns all other bits to 0s.
+
+This operation is often used in algorithms dealing with binary numbers, for example, when you want to check if a number is a power of two (in which case it will have only one 1-bit), or when you want to perform certain operations on the individual bits of a number.
