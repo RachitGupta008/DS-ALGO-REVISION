@@ -1,1 +1,62 @@
 https://leetcode.com/problems/interleaving-string/solutions/2250195/java-4-solutions-recursion-memoization-dp/ -- learn 1d optimization as well
+
+
+Tabulation vs. Memoization:
+
+Coin Change (Tabulation): Given coin denominations and a total amount, find the minimum number of coins that make up that amount.
+Word Break (Memoization): Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into space-separated sequence of one or more dictionary words.
+1D, 2D, and Multi-dimensional DP:
+
+Climbing Stairs (1D): You are climbing a staircase. It takes N steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+Unique Paths (2D): A robot is located at the top-left corner of a m x n grid and wants to reach the bottom-right corner. How many unique paths are there?
+Linear DP:
+
+Maximum Subarray: Find the contiguous subarray within an array that has the largest sum.
+House Robber: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+Knapsack-based:
+
+0/1 Knapsack: Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value.
+Subset Sum: Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to the given sum.
+LCS and its variations:
+
+Longest Common Subsequence: Given two sequences, find the length of the longest subsequence present in both sequences.
+Longest Palindromic Subsequence: Given a sequence, find the length of the longest palindromic subsequence in it.
+Coin Change:
+
+Coin Change 2: Find the number of combinations that make up that amount. You may assume you have an infinite number of each of your coin denominations.
+Fewest Coins To Make Change: For a given number 'amount', if no combination can sum up to 'amount', return -1.
+MCM and its variations:
+
+Matrix Chain Multiplication: Given an array p[] which represents the chain of matrices, find the minimum number of multiplications needed to multiply the chain.
+Palindrome Partitioning: Partition a string into substrings such that every substring is a palindrome. Return the minimum cuts needed for the palindrome partitioning.
+DP on Trees:
+
+Diameter of Binary Tree: Find the length of the longest path between any two nodes in a tree.
+Binary Tree Maximum Path Sum: Find the maximum path sum. The path may start and end at any node in the tree.
+DP with Bitmasking:
+
+Shortest Path Visiting All Nodes: You have a graph of n nodes. You are given an integer n and an array edges where each edges[i] = [ui, vi] indicates that there is a bidirectional edge between nodes ui and vi. Return the shortest path that visits all nodes.
+TSP: Given a list of cities and the distances between each pair of cities, find the shortest possible route that visits each city and returns to the origin city.
+Interval DP:
+
+Burst Balloons: Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons.
+Merge Intervals: Given a collection of intervals, merge any overlapping intervals.
+Traveling Salesman Problem (TSP):
+
+TSP with DP and bitmasking: As mentioned above, solve the TSP using dynamic programming and bitmasking.
+Counting Problems:
+
+Decode Ways: A message containing letters from A-Z is being encoded to numbers using the following mapping: 'A' -> 1, 'B' -> 2, ... 'Z' -> 26. Determine the total ways to decode it.
+Count Different Palindromic Subsequences: Given a string S, find the number of different non-empty palindromic subsequences in S.
+Partitioning Problems:
+
+Partition Equal Subset Sum: Determine if the given array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
+K-Partition Problem: Divide the given array into K non-empty subsets such that the sum of elements in every subset is same.
+Game Theory DP:
+
+Stone Game: Two players play a game. The player who picks the stone last wins. Can you decide who will win?
+Predict the Winner: Given an array of scores, predict whether the first player will win or not.
+Rolling DP:
+
+Minimum Window Substring: Given two strings s and t, return the minimum window in s which will contain all the characters in t.
+Check Subarray Sum: Given an integer array nums and an integer k, return true if the array has a continuous subarray of size at least two whose elements sum up to a multiple of k, or false otherwise.
